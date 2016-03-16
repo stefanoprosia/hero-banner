@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -14,10 +15,43 @@ img {
 
 .banner {
   position: relative;
+  max-height: 500px;
+  overflow: hidden;
 }
 
-.banner-content {
+.text {
   padding: 0 1rem;
   position: absolute;
   bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  max-width: 45rem;
+  width: 100%;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.banner-title {
+  margin: 0;
+  font-size: 4rem;
+  font-style: normal;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline;
+  line-height: 1.4;
+}
+
+.banner-content {
+  margin: 0;
 }
